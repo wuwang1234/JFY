@@ -1,0 +1,43 @@
+python知识点
+代码中要修改不可变数据会出现什么问题? 抛出什么异常? (2018-3-29-lxy)
+代码不会正常运行，抛出 TypeError 异常。
+
+print 调用 Python 中底层的什么方法?(2018-3-30-lxy)
+print 方法默认调用 sys.stdout.write 方法，即往控制台打印字符串
+
+简述你对 input()函数的理解?
+在 Python3 中，input()获取用户输入，不论用户输入的是什么，获取到的都是字符串类型的。
+在 Python2 中有 raw_input()和 input(), raw_input()和 Python3 中的 input()作用是一样的，
+input()输入的是什么数据类型的，获取到的就是什么数据类型的
+
+A0 = dict(zip(('a'，'b'，'c'，'d'，'e')，(1，2，3，4，5)))
+2. A1 = range(10)
+3. A2 = [i for i in A1 if i in A0]
+4. A3 = [A0[s] for s in A0]
+5. A4 = [i for i in A1 if i in A3]
+6. A5 = {i:i*i for i in A1}
+7. A6 = [[i，i*i] for i in A1]
+
+
+4G 内存怎么读取一个 5G 的数据？(2018-3-30-lxy)
+方法一：
+可以通过生成器，分多次读取，每次读取数量相对少的数据（比如 500MB）进行处理，处理结束后
+在读取后面的 500MB 的数据。
+方法二：
+可以通过 linux 命令 split 切割成小文件，然后再对数据进行处理，此方法效率比较高。可以按照行
+数切割，可以按照文件大小切割。
+
+read、readline 和 readlines 的区别? (2018-4-16-lxy)
+read:读取整个文件。
+readline：读取下一行，使用生成器方法。
+readlines：读取整个文件到一个迭代器以供我们遍历
+
+os 操作系统，time 时间，random 随机，pymysql 连接数据库，threading 线程，multiprocessing
+进程，queue 队列。
+第三方库：
+django 和 flask 也是第三方库，requests，virtualenv，selenium，scrapy，xadmin，celery，
+re，hashlib，md5。
+常用的科学计算库（如 Numpy，Scipy，Pandas)。
+
+Python 自带 logging 模块，调用 logging.basicConfig()方法，配置需要的日志等级和相应的参数，
+Python 解释器会按照配置的参数生成相应的日志。

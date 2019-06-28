@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+//			Timer = setTimeout(aa,2000)
+//			function aa(){
+//				alert('hello')
+//			}
+//			clearTimeout(Timer)
+           window.onload=function(){
+           	Ali = document.getElementsByTagName('li')
+           	for(var i=0;i<Ali.length;i++){
+           		alert(i)  //0-8
+           		Ali[i].onclick=function(){
+           			alert(i)  //8
+           		}
+           	}
+           	
+           }
+           function createFunctions(){
+			    var result = new Array();
+			    for (var i=0; i < 10; i++){
+			        result[i] = function(){
+			            return i;
+			        };
+			    }
+			    return result;
+			}
+			var funcs = createFunctions();
+			for (var i=0; i < funcs.length; i++){
+			    console.log(funcs[i]());
+			}
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>

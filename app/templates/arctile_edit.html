@@ -1,0 +1,34 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}文章编辑{% endblock %}
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="/home">独家记忆</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">样式模板</a></li>
+                <li><a href="/">插入图片</a></li>
+                <li><a href="/">插入视频</a></li>
+                <li><a href="/">背景配色</a></li>
+                <li><a href="/">文章排版</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+{% block page_content %}
+		<form method="post">
+		    {{ form.hidden_tag() }}
+		    {{ form.classify(class='formLogin',placeholder='请输入或选择文章类型')}}
+		    {{ form.title(class='formLogin login_name',placeholder='标题') }}
+		    {{ form.text(class='formLogin',placeholder='正文') }}
+		    {{ form.submit(class='formsubmit') }}
+		</form>
+{% endblock %}
+</div>
+{% endblock %}

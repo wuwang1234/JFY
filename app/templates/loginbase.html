@@ -1,0 +1,92 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}流年记忆{% endblock %}
+{%- block styles %}
+{{super()}}
+<link rel="stylesheet" type="text/css" href="../static/css/loginbase.css" >
+<link rel="stylesheet" href="../static/css/iconfont.css">
+<script  type="text/javascript" src="../static/js/login_regi.js"></script>
+<style  type="text/css">
+	{% if Flag %}
+		#button001 {
+			color: red;
+		}
+		.reginit{
+			display: none;
+		}
+		.logininit{
+        	display: block;
+        }
+	{% else %}
+		#button002{
+			color: red;
+        }
+        .logininit{
+        	display: none;
+        }
+        .reginit{
+			display: block;
+		}
+	{% endif %}
+</style>
+{%- endblock styles %}
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="/home">@独家记忆</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+{% block page_content %}
+<div class="loginOregi">
+	<div class="login-content">
+	    <h2 class='title00'>流年记忆 </h1>
+	    <h4 class="title01">记住该记住的，忘记该忘记的，改变能改变的，接受不能改变的</h2>
+	    <br />
+	</div>
+	<div class="logintitle">
+        <span class="span001">
+            <form>
+            	<input type="button" id='button001' value="登录"/>
+            </form>
+        </span>
+        <span class="span002">
+            <form>
+	            <input type="button" id='button002' value="注册"/>
+            </form>
+        </span>
+	</div>
+	<div class="logininit" id='login001'>
+		<form method="post">
+		    {{ form.hidden_tag() }}
+		    <i class="iconfont iconxingmingyonghumingnicheng"></i>
+		    {{ form.name(class='formLogin login_name',placeholder='用户名') }}
+		    <i class="iconfont iconmima"></i>
+		    {{ form.passwd(class='formLogin',placeholder='密   码') }}
+		    {{ form.submit(class='formsubmit') }}
+		</form>
+	</div>
+	<div class="reginit" id='regi001'>
+		<form method="post">
+		    {{ form.hidden_tag() }}
+		    <i class="iconfont iconxingmingyonghumingnicheng"></i>
+		    {{ form.name(class='formLogin login_name',placeholder='用户名') }}
+		    <i class="iconfont iconshoujihao"></i>
+		    {{ form.number(class='formLogin',placeholder='手机号') }}
+		    <i class="iconfont iconyouxiang"></i>
+		    {{ form.email(class='formLogin',placeholder='邮   箱') }}
+		    <i class="iconfont iconmima"></i>
+		    {{ form.passwd(class='formLogin',placeholder='密   码') }}
+		    {{ form.submit(class='formsubmit') }}
+		</form>
+	</div>
+</div>
+{% endblock %}
+</div>
+{% endblock %}
+
+

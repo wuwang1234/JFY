@@ -1,0 +1,39 @@
+/*设置常用的盒模型外边距和内边距都为0*/
+body,ul,h1,h2,h3,h4,h5,p,dl,dd,input,select,form{
+	margin: 0;
+	padding: 0;
+}
+/*让H标签继承body设置的字体*/
+h1,h2,h3,h4,h5{
+	font-size: 100%;
+}
+/*设置列表去掉前面的点*/
+ul{
+	list-style: none;
+}
+em{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+}
+/*图片标签去掉图片的外边框*/
+img{
+	border: none;
+}
+.clearfix:before,.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}

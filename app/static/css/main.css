@@ -1,0 +1,195 @@
+body{
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color: black;
+}
+/*设置头部容器样式*/
+.header_cn{
+	height: 50px;
+	line-height: 40px;
+}
+.header{
+	height:50px;
+	width:1000px;
+	margin: 0 auto;
+}
+.welcome{
+	font-size: 30px;
+}
+.user_info{
+	
+}
+.user_login_lin a,.user_shopping a{
+	color: black;
+}
+/*设置LOGO容器样式*/
+.logo_bar{
+	height: 50px;
+	width: 1000px;
+	margin: 0 auto;
+	line-height: 50px;
+	border:1px solid #000000;
+}
+.logo{
+	width: 150px;
+	height: 50px;
+	background: #006600;
+}
+/*migin设置是从上开始,顺时针设置.即上/右/下/左*/
+.search{
+	width: 600px;
+	height: 30px;
+	margin: 10px 0 0 60px;
+	border: 1px solid green;
+}
+
+.search .input_text{
+	width: 450px;
+	height: 30px;
+	border: 0px;
+	outline: none;
+	margin-left: 50px;
+}
+.search .input_button{
+	width: 100px;
+	height: 30px;
+	border: 0;
+	background-color: green;
+}
+.chart{
+	width:100px;
+	height: 30px;
+	margin-right: 20px;
+	overflow: hidden;
+	margin-top: 10px;
+	line-height: 30px;
+}
+/*text-indent是指的首行缩进*/
+.chart a{
+	height: 30px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color: black;
+	text-indent: 10px;
+	line-height: 30px;
+}
+
+.chart span{
+	width:100px;
+	background-color: green;
+	text-align: center;
+	line-height: 30px;
+}
+/*定义菜单栏容器的样式*/
+.sub_menu_con{
+	height: 50px;
+	border-bottom: 1px solid black;
+}
+.sub_menu{
+	margin: 0 auto;
+	width: 1000px;
+	height: 50px;
+	border:1px solid black;
+}
+.sub_menu h1{
+	background-color: gold;
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+}
+.sub_menu ul{
+	overflow: hidden;
+}
+/*li元素中间的竖线通过boder来设置,设置margin为-1
+ * 设置父级元素overflow: hidden,这样最左边的竖线就会隐藏*/
+.sub_menu li{
+	float: left;
+	padding: 0 50px;
+	line-height: 50px;
+	border-left: 1px solid black;
+	margin-left: -1px;
+	color: #000000;
+}
+.center_con{
+	width: 1000px;
+	height: 300px;
+	margin:0 auto;
+	background-color: cyan;
+}
+.center_con .main_menu{
+	width: 150px;
+	height: 300px;
+	background-color: gold;
+	overflow: hidden;
+}
+/*若是每个li中添加图标,可以用背景图片no-repeat或者icon*/
+.center_con .main_menu li{
+	width:150px;
+	height: 50px;
+	border: 1px solid white;
+	margin-top: -1px;
+	text-align: center;
+	line-height: 50px;
+}
+/*幻灯片的容器,其他都是相对于父级元素进行定位*/
+.slide_con{
+	width: 670px;
+	height: 300px;
+	text-align: center;
+	line-height: 300px;
+	position: relative;
+	border: 1px solid black;
+}
+.pre{
+	font-size: 16px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	cursor: pointer;
+	padding: 0px;
+	margin: 0px;
+	top:0px;
+	right: 0px;
+}
+.next{
+	font-size: 16px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	cursor: pointer;
+	padding: 0px;
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+}
+.points{
+	position: absolute;
+	height: 20px;
+	width: 100%;
+	bottom:150px;
+	left: 0px;
+	text-align: center;
+	font-size: 0px;
+}
+.points li{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 20px;
+}
+.adv{
+	width:178px;
+	height: 300px;
+	background-color: red;
+}
+.adv a{
+	width: 178px;
+	height: 150px;
+	float: left;
+}
+.adv a img{
+	display: block;
+}

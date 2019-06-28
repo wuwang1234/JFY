@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实现换肤的功能</title>
+		<style type="text/css">
+			body{
+				background-color:#0066CC ;
+				padding: 0px;
+				margin: 0 auto;
+				border: 0px;
+			}
+			div{
+				margin: 0 auto;
+				background-color: gold;
+				width: 400px;
+				height: 400px;
+				font-size: 0px;
+				overflow: hidden;
+				text-align: center;
+			}
+			input{
+				margin: 100px auto;
+				background-color: #000000;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				font-style: normal;
+				width: 100px;
+				height: 50px;
+				color: gold;
+				line-height: 50px;
+			}
+			h1{
+				margin: 60px auto;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				border: 1px gray solid ;
+				
+			}
+		</style>
+		<script type="application/javascript">
+			window.onload = function(){
+				Obody = document.getElementById('div001')
+				Obutton = document.getElementById('but001')
+				
+				Obutton.onclick = function(){
+					Obody.style.backgroundColor='red'
+				}
+				
+					
+			}
+		</script>
+	</head>
+	<body>
+		<div id='div001'>
+			<h1>这是一个换肤的例子</h1>
+			<input type="button" id="but001" value="换肤按钮" />
+		</div>
+	</body>
+</html>
