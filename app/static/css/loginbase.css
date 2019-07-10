@@ -32,8 +32,21 @@ html,body{
 	position: relative;
 }
 .logininit,.reginit{
-	margin: 0px 300px;
+	margin: 0 auto;
 	border: 1px solid #d4bdbd;
+	width: 500px;
+}
+@media only screen and (min-width: 350px) and (max-width: 640px) {
+	.logininit,.reginit{
+		margin: 0 auto;
+	    width: 300px;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+	.logininit,.reginit{
+		margin: 0 auto;
+	    width: 250px;
+	}
 }
 .formLogin{
 	background-color: inherit;
@@ -51,12 +64,26 @@ html,body{
 	width: 100%;
 	height: 50px;
 }
+.logintitle{
+	text-align: center;
+	margin: 0 auto;
+}
 .span001,.span002{
 	display: inline-block;
 	font-size: 30px;
 	height: 50px;
 	line-height: 50px;
 	width: 200px;
+}
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+    .span001 , .span002{
+	    width: 100px;
+    }
+}
+@media only screen and (min-width:400px) and (max-width: 640px) {
+    .span001 , .span002{
+	    width: 150px;
+    }
 }
 .iconxingmingyonghumingnicheng,.iconshoujihao,.iconyouxiang,.iconmima{
 	float: left;
