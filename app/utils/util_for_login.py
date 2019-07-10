@@ -1,4 +1,11 @@
 # coding=utf-8
+# from app import login_manager
+# from flask import current_app,session
+# from flask_login import login_user, login_required
+# from flask_login import current_user
+# from flask_login import logout_user
+
+
 def get_login_info(Nmodel, Oquery_result=None):
     '''
 
@@ -40,3 +47,13 @@ def genera_object(Nmodel):
     a = importlib.import_module('app.zhdb.Omodel.%s' % Nmodel)
     Ins = getattr(a, Nmodel)()
     return Ins
+
+
+# @login_manager.user_loader()
+# def load_user(User, user_id):
+#     return User.get(user_id)
+#
+#
+# def login_user(user):
+#     user_id =getattr(user,current_app.login_manager.id_attribute)()
+

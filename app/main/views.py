@@ -16,17 +16,12 @@ def home():
         return redirect(url_for('.index'))
     return render_template('home.html',
                            form=form, name=session.get('name'),
-                           known=session.get('known', False),
                            current_time=datetime.utcnow())
 
 
 @main.route('/', methods=['GET', 'POST'])
-@main.route('/?<string:username>', methods=['GET', 'POST'])
-def index(username=None):
-    if username is None:
-        return render_template('index.html')
-    else:
-        return render_template('index.html', username=username, current_time=datetime.utcnow())
+def index():
+    return render_template('index.html', username=session.get('name'), current_time=datetime.utcnow())
 
 
 @main.route('/userLogin', methods=['GET', 'POST'])
@@ -53,11 +48,12 @@ def login():
         login_flag = util_for_login.juage_login_passwd(data_model, passwd, Oresult)
         print(login_flag)
         if login_flag:
-            return redirect(url_for('main.index', username=user))
+            session['name'] = user
+            return redirect(url_for('main.index', username=session.get('name')))
         else:
             return redirect(url_for('main.login'))
-    return render_template('user_login.html', Flag=True,
-                           form=form, name=session.get('name'),
+    return render_template('user_login.html', form=form,
+                           name=session.get('name'),
                            known=session.get('known', False),
                            current_time=datetime.utcnow())
 
@@ -90,7 +86,6 @@ def registor():
         return redirect(url_for('main.index', username=form_dict['username']))
     return render_template('user_registor.html', Flag=False,
                            form=form, name=session.get('name'),
-                           known=session.get('known', False),
                            current_time=datetime.utcnow())
 
 
@@ -111,12 +106,12 @@ def arctile_edit():
         form_dict = request.form.to_dict()
         fname = sys._getframe().f_code.co_name
         data_model = contants.DB_Enum[fname]
+        form_dict['author'] = session.get('name') if session.get('name') else '匿名'
         DBdata_dict = deal_form_data.deal_data(form_dict, data_model)
         kwargs = {'form': DBdata_dict}
         OperaInter().add(data_model, **kwargs)
-        return redirect(url_for('main.home', username=form_dict['username']))
+        return redirect(url_for('main.home', username=session.get('name')))
     return render_template('arctile_edit.html', form=form,
-                           known=session.get('known', False),
                            current_time=datetime.utcnow())
 
 

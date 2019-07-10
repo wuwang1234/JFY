@@ -19,3 +19,4 @@ class Arctiles(db.Document):
     title = db.StringField(required=True, max_length=50)
     text = db.StringField(required=True, max_length=5000)
     date = db.StringField(required=True, max_length=50)
+    author = db.StringField(required=True, max_length=50)

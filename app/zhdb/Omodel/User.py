@@ -1,7 +1,9 @@
 from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import UserMixin
+import uuid
 
 
-class User(object):
+class User(UserMixin):
     def __init__(self, username=None, number=None, email=None):
         self.username = username
         self.number = number
@@ -22,6 +24,12 @@ class User(object):
     def to_dict(self):
         # self.__dict__.pop('password')
         return self.__dict__
+
+    def get_id(self):
+        if self.username is not None:
+            return self.username
+        else:
+            return uuid.uuid4()
 
 
 if __name__ == '__main__':
