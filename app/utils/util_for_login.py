@@ -1,3 +1,4 @@
+# coding=utf-8
 def get_login_info(Nmodel, Oquery_result=None):
     '''
 

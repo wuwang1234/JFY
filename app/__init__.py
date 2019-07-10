@@ -1,3 +1,4 @@
+# coding=utf-8
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail
@@ -5,7 +6,6 @@ from flask_moment import Moment
 from config import config
 import importlib
 from app.utils.get_db_type import get_db_type as dbtype
-
 
 bootstrap = Bootstrap()
 mail = Mail()
@@ -22,7 +22,7 @@ else:
 
 def create_app(config_name):
     app = Flask(__name__)
-    app.config.from_object(config[config_name]) # 可以直接把对象里面的配置数据转换到app.config里面
+    app.config.from_object(config[config_name])  # 可以直接把对象里面的配置数据转换到app.config里面
     config[config_name].init_app(app)
 
     bootstrap.init_app(app)
@@ -32,5 +32,3 @@ def create_app(config_name):
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
     return app
-
-

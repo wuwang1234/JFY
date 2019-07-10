@@ -1,60 +1,51 @@
-<!DOCTYPE html>
-{% extends "bootstrap/base.html" %}
-{% block title %}鱼的记忆{% endblock %}
+{% extends "base.html" %}
+{% block title %}独家记忆首页{% endblock %}
 {%- block styles %}
 {{super()}}
 <link rel="stylesheet" type="text/css" href="../static/css/home.css" >
+<script  type="text/javascript" src="../static/js/jquery-3.4.0.min.js"></script>
+<script  type="text/javascript" src="../static/js/index.js"></script>
 {%- endblock styles %}
-<div class="container">
-	{% block navbar %}
-	<div class="navbar navbar-inverse" role="navigation">
-	    <div class="container">
-	        <div class="navbar-header">
-	        <button type="button" class="navbar-toggle"
-	        data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	        </button>
-	        <a class="navbar-brand" href="/">@独家记忆</a>
-	        </div>
-	        <div class="navbar-collapse collapse">
-	        	{% if username %}
-	        	<span class="nav navbar-nav">{{ username }},独家记忆欢迎您</span>
-	        	{% else %}
-	            <ul class="nav navbar-nav"> 
-	                <li><a  href="/userLogin" target="_blank">登录</a></li>
-	                <li><a href="/userRegistor" target="_blank">注册</a></li>
-	            </ul>
-	            {% endif %}
-	        </div>
-	    </div>
-	</div>
-	{% endblock %}
-	
-	{% block content %}
-	{% block page_content %}
-	<div class="container">
-		<div class="menu">
-			<ul>
-				<li><a href="">个人中心</a></li>
-				<li><a href="">记忆中心</a></li>
-				<li><a href="">界面订做</a></li>
-			</ul>
-		</div>
-		<div class="content">
-		一杯敬朝阳，一杯敬月光<br>
-		一杯敬明天，一杯敬过往<br>
-		一杯敬自由，一杯敬死亡<br>
-		</div>
-		<div class="footer">   
-	        <span>版权所有@勿忘</span>
-	        <span>问题邮箱2382725346@qq.com</span>
-		</div>
-	</div>
+{% block page_content %}
+<div class="page-header">
+    <h1>
+    	<span class="main_heading">致所有人,态度决定生活，学会爱自己，学会享受你的生活！</span>	
+    </h1>
+    <h2>
+    	<a href="/arctile_edit"  class="sbu_heading">写文章</a>
+    </h2>
 
-	{% endblock %}
-	{% endblock %}
+    <!--<div class="menu">
+    	<ul>
+    		<li>吃</li>
+    		<li>喝</li>
+    		<li>玩</li>
+    		<li>乐</li>
+   		</ul>
+    </div>-->
+	<!--<div class="pagenation">
+		<a href="">上一页</a>
+		<a href="">1</a>
+		<a href="">2</a>
+		<span>...</span>
+		<a href="">n</a>
+		<a href="">下一页</a>
+	</div>-->
 </div>
-
+<div class="arctiles_list">
+	<ul>
+		<li>
+			<p class="arctiles_title_box">
+				<a href="">
+					<span class="arctiles_title"></span>
+				</a>
+			</p>
+			<div class="arctiles_details">
+				<span class="arctile_type"></span>
+				<span class="arctile_author"></span>
+				<span class="arctile_update"></span>
+			</div>
+		</li>
+	</ul>
+</div>
+{% endblock %}

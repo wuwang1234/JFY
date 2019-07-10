@@ -12,3 +12,10 @@ class User(db.Document):
 class Role(db.Document):
     meta = {'allow_inheritance': True}
     name = db.StringField(max_length=50)
+
+
+class Arctiles(db.Document):
+    classify = db.StringField(required=True, max_length=50)
+    title = db.StringField(required=True, max_length=50)
+    text = db.StringField(required=True, max_length=5000)
+    date = db.StringField(required=True, max_length=50)

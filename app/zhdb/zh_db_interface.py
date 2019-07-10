@@ -1,3 +1,4 @@
+# coding=utf-8
 from app.zhdb import dbtype, DbClient
 
 
@@ -59,3 +60,9 @@ class OperaInter(object):
         # 如果传入了self，接受参数的时候self是args的第一个参数
         self.QueryObject = DbClient.QueryOneItem(*args, **kwargs)
         return self.QueryObject.get_one_items()
+
+    def query_all(self, *args, **kwargs):
+        # self.QueryObject = QueryOneItem(self,*args, **kwargs)
+        # 如果传入了self，接受参数的时候self是args的第一个参数
+        self.QueryObject = DbClient.QueryAllItems(*args, **kwargs)
+        return self.QueryObject.get_all_items()

@@ -64,16 +64,36 @@ class QueryOneItem(object):
         return self.model_object
 
     def get_all_items(self):
-        Omodel = self.set_model_object()
-        for O in Omodel.objects.all():
-            print(O.username)
-        return Omodel.objects
+        all_items = self.set_model_object().objects
+        return all_items
 
     def get_one_items(self):
         o_model = self.set_model_object().objects.filter(**self.condition).first()
         # print(o_model.number)
         print(o_model)
         return o_model
+
+
+class QueryAllItems(object):
+    def __init__(self, *args, **kwargs):
+        # print(condition)
+        print(args)
+        print(kwargs)
+        self.dbtype = get_db_type.get_db_type()
+        self.data_model = args[0]
+        self.condition = kwargs['condition'] if 'condition' in kwargs.keys() else None
+        self.model_object = None
+
+    def set_model_object(self):
+        if self.dbtype == 'mongo':
+            self.model_object = getattr(gmodel, self.data_model)
+        else:
+            pass
+        return self.model_object
+
+    def get_all_items(self):
+        all_items = self.set_model_object().objects
+        return all_items
 
 
 class UpdateAllItems(object):

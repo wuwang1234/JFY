@@ -1,31 +1,32 @@
+# coding=utf-8
 from datetime import datetime
 from flask import render_template, session, redirect, url_for, flash, request
 from . import main
 from .forms import LoginForm, RegistrationForm, ArticleForm
 from app.zhdb.zh_db_interface import *
 import sys
-from app.utils import contants, deal_form_data, util_for_login
+from app.utils import contants, deal_form_data, util_for_login, deal_database_data
 
 
-@main.route('/', methods=['GET', 'POST'])
-def index():
+@main.route('/home', methods=['GET', 'POST'])
+def home():
     form = LoginForm()
     if form.validate_on_submit():
         # ...
         return redirect(url_for('.index'))
-    return render_template('index.html',
+    return render_template('home.html',
                            form=form, name=session.get('name'),
                            known=session.get('known', False),
                            current_time=datetime.utcnow())
 
 
-@main.route('/home', methods=['GET', 'POST'])
-@main.route('/home/?<string:username>', methods=['GET', 'POST'])
-def home(username=None):
+@main.route('/', methods=['GET', 'POST'])
+@main.route('/?<string:username>', methods=['GET', 'POST'])
+def index(username=None):
     if username is None:
-        return render_template('home.html')
+        return render_template('index.html')
     else:
-        return render_template('home.html', username=username, current_time=datetime.utcnow())
+        return render_template('index.html', username=username, current_time=datetime.utcnow())
 
 
 @main.route('/userLogin', methods=['GET', 'POST'])
@@ -52,7 +53,7 @@ def login():
         login_flag = util_for_login.juage_login_passwd(data_model, passwd, Oresult)
         print(login_flag)
         if login_flag:
-            return redirect(url_for('main.home', username=user))
+            return redirect(url_for('main.index', username=user))
         else:
             return redirect(url_for('main.login'))
     return render_template('user_login.html', Flag=True,
@@ -86,11 +87,21 @@ def registor():
         # db.session.commit()
         # login_user(user)
         # user.save()
-        return redirect(url_for('main.home', username=form_dict['username']))
+        return redirect(url_for('main.index', username=form_dict['username']))
     return render_template('user_registor.html', Flag=False,
                            form=form, name=session.get('name'),
                            known=session.get('known', False),
                            current_time=datetime.utcnow())
+
+
+@main.route('/api/search/content/', methods=['GET', 'POST'])
+def get_all_arctiles():
+    fname = sys._getframe().f_code.co_name
+    data_model = contants.DB_Enum[fname]
+    # ks = {'condition': filter_data}
+    Oresult = OperaInter().query_all(data_model)
+    data_json = deal_database_data.to_json(data_model, Oresult)
+    return data_json
 
 
 @main.route('/arctile_edit', methods=['GET', 'POST'])
