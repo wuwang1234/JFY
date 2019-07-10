@@ -4,6 +4,7 @@
 {%- block styles %}
 {{super()}}
 <link rel="stylesheet" type="text/css" href="../static/css/index.css" >
+<script  type="text/javascript" src="../static/js/index.js"></script>
 {%- endblock styles %}
 <div class="container">
 	{% block navbar %}
@@ -24,8 +25,8 @@
 	        	<span class="nav navbar-nav">{{ username }},独家记忆欢迎您</span>
 	        	{% else %}
 	            <ul class="nav navbar-nav"> 
-	                <li><a  href="/userLogin" target="_blank">登录</a></li>
-	                <li><a href="/userRegistor" target="_blank">注册</a></li>
+	                <li><a  href="/userLogin" >登录</a></li>
+	                <li><a href="/userRegistor" >注册</a></li>
 	            </ul>
 	            {% endif %}
 	        </div>
@@ -39,7 +40,7 @@
 		<div class="menu">
 			<ul>
 				<li><a href="">个人中心</a></li>
-				<li><a href="/home">记忆中心</a></li>
+				<li><a href="/home" target="_blank">记忆中心</a></li>
 				<li><a href="">界面订做</a></li>
 			</ul>
 		</div>

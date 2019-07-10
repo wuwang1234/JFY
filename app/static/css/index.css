@@ -39,13 +39,31 @@ body{
 	margin: 0 auto;
 	text-align: center;
 }
-.menu{
+.menu li{
 	list-style: none;
 }
-.menu li{
+.menu ul{
+	padding: 0px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
+	.menu li{
 	display: inline-block;
 	margin: 100px;
 }
+}
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+	.menu li{
+	display: inline-block;
+	margin: 50px 100px;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+	.menu li{
+	display: inline-block;
+	margin: 30px 100px;
+}
+}
+
 .menu li a{
 	font-family: "microsoft yahei";
 	font-size: 30px;
