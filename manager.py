@@ -1,4 +1,8 @@
 import os
+import sys
+if sys.version_info < (3, 0):
+    reload(sys)
+    sys.setdefaultencoding("utf-8")
 from app import create_app, db
 from app.models import User, Role
 from flask_script import Manager, Shell
