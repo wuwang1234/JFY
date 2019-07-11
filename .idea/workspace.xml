@@ -6,14 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bb552cf-6047-4718-8d50-4ab9e32c88a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/utils/data_transfer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/contants.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/contants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/deal_database_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/deal_database_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/zhdb/Omodel/Arctiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/zhdb/Omodel/Arctiles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/待优化.txt" beforeDir="false" afterPath="$PROJECT_DIR$/待优化.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/arctile_edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/arctile_edit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/arctile_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/arctile_edit.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,40 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="zhdb" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -442,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562769470490</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修改BUG">
+      <created>1562839067496</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562839067496</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -464,11 +433,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.86277604" side_tool="true" weight="0.16910689" />
       <window_info id="Favorites" order="1" sideWeight="0.84199136" side_tool="true" weight="0.3169643" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.13722397" visible="true" weight="0.21205357" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.13722397" visible="true" weight="0.21205357" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6781046" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.20949264" />
@@ -479,7 +447,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.14238952" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074404" side_tool="true" weight="0.27332243" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32569557" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.49925596" visible="true" weight="0.34369886" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49925596" visible="true" weight="0.34369886" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

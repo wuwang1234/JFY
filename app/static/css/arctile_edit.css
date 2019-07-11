@@ -1,10 +1,19 @@
+body{
+	padding: 0px;
+	background-color: #ede3e7;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+.navbar-header .navbar-brand{
+	font-size: 30px;
+}
 .title_box{
 	display: inline-block;
 	width: 100%;
 	height: 50px;
 	text-indent: 50px;
 	line-height:50px ;
-	background-color: #9ef36a;
+	background-color: #ede3e7;
 }
 .class_box{
 	height: 50px;
@@ -15,8 +24,12 @@
 	line-height: 50px;
 	padding: 0px;	
 }
-body .textbox{
+body .textbox,.textbox .textbox-text{
 	vertical-align: top;
+	background-color: #ede3e7;
+}
+.panel-body {
+	background-color: #ede3e7;
 }
 .hot_label{
 	display: inline-block;
@@ -38,15 +51,32 @@ body .textbox{
 	display: inline-block;
 	width: 100%;
 	height: 500px;
-	background-color: #9ef36a;
+	padding: 0 50px;
+	background-color: #ede3e7;
+	text-align: center;
+	line-height: 500px;
 }
 .formsubmit{
-	background-color: #9ef36a;
+	background-color: #ede3e7;
 	border-bottom-right-radius: -webkit-calc(50);
 	padding: 0px;
 	display: inline-block;
-	width: 50%;
+	width: 607px;
 	height: 50px;
 	margin: 4px auto;
 	text-align: center;
+}
+.classify_box{
+	width: 45%;
+}
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+	.formsubmit{
+		width: 100%;
+	}
+	.hot_label{
+		display: none;
+	}
+	.textbox{
+		width:100%!important;
+	}
 }
