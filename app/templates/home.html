@@ -2,6 +2,7 @@
 {% block title %}独家记忆首页{% endblock %}
 {%- block styles %}
 {{super()}}
+<link rel="stylesheet" type="text/css" href="../static/css/reset.css" >
 <link rel="stylesheet" type="text/css" href="../static/css/home.css" >
 <script  type="text/javascript" src="../static/js/jquery-3.4.0.min.js"></script>
 <script  type="text/javascript" src="../static/js/home.js"></script>
@@ -12,39 +13,30 @@
     	<span class="main_heading">致所有人,态度决定生活，学会爱自己，学会享受你的生活！</span>	
     </h1>
     <h2>
-    	<a href="/arctile_edit"  class="sbu_heading">写文章</a>
+    	<a href="/arctile_edit"  class="sbu_heading fr">写文章</a>
     </h2>
-
-    <!--<div class="menu">
-    	<ul>
-    		<li>吃</li>
-    		<li>喝</li>
-    		<li>玩</li>
-    		<li>乐</li>
-   		</ul>
-    </div>-->
-	<!--<div class="pagenation">
-		<a href="">上一页</a>
-		<a href="">1</a>
-		<a href="">2</a>
-		<span>...</span>
-		<a href="">n</a>
-		<a href="">下一页</a>
-	</div>-->
 </div>
 <div class="arctiles_list">
 	<ul class="arctile_ul">
 		<li class="arctile_li">
-			<p class="arctiles_title_box">
-				<a href="">
-					<span class="arctiles_title"></span>
-				</a>
-			</p>
-			<div class="arctiles_details">
-				<span class="arctile_type"></span>
-				<span class="arctile_author"></span>
-				<span class="arctile_update"></span>
+			<div class="normal_box">
+				<p class="arctiles_title_box">
+					<a href="">
+						<span class="arctiles_title"></span>
+					</a>
+				</p>
+				<div class="arctiles_details">
+					<span class="arctile_type"></span>
+					<span class="arctile_author"></span>
+					<span class="arctile_update"></span>
+				</div>
 			</div>
+			<!--<div class="l_box">
+				<a class="img-wrap" target="_blank" href="/group/6687949624264622600/"> 
+					<img alt="" src="http://p3-tt.byteimg.com/list/300x196/pgc-image/RPhz1Wp88ruUkQ">
+				</a> 
+			</div>-->
+
 		</li>
 	</ul>
 </div>

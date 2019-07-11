@@ -10,5 +10,4 @@ class Arctiles(object):
         self.author = author
 
     def to_dict(self):
-        # self.__dict__.pop('password')
         return self.__dict__

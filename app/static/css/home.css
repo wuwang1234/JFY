@@ -1,28 +1,53 @@
+body{
+	background-color: #f1f2f3;
+}
 .main_heading{
 	font-size: 40px;
 }
 .sbu_heading{
-	float: right;
-}
-.pagenation{
-	margin: 50px auto 0;
-	width: 100%;
-	height: 30px;
-	text-align: center;
-}
-.pagenation a{
 	display: inline-block;
-	height: 30px;
-	font-size: 10px;
-	padding: 10px 10px;
+	height: 50px;
+	width: 100px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid rgba(240, 124, 129, 1);
+	background-color: rgba(240, 124, 129, 1);
+	box-shadow: 0 0 10px 2px #efabab inset;
+	color: white;
+	border-radius: 25px;
 }
-.menu ul{
-	list-style: none;
-	margin-top: 50px;
-}
-.menu ul li{
-	font-size: 30px;
+.sbu_heading:hover{
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
 }
 .arctiles_list{
-	margin-top: 50px;
+	margin: 50px;
+	padding: 50px;
+	color:#000000;
+	font-size: 20px;
+	background-color: #f7dbdb;
+	border-radius: 10px;
+	
+}
+.arctile_ul{
+	padding: 0px;
+	width: 100%;
+	text-align: left;
+}
+.normal_box{
+	border-bottom: 1px solid #e8e8e8;
+	margin-bottom: 20px;
+}
+.arctile_li{
+	width: 100%;
+}
+
+.arctiles_title_box .arctiles_title{
+	color: #ab5050;
+	font-weight: bolder;
+}
+.arctiles_details span{
+	margin-right: 50px;
 }
