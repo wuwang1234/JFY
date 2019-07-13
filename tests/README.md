@@ -1,0 +1,7 @@
+cli:用来封装所有命令行工具测试类
+common：用来封装公共的工具类和函数
+config：用来存放配置文件
+stress：用来存放性能测试脚本
+whitebox：用来存放白盒测试
+tests:用来存放功能测试的用例
+services：封装API测试的client，进行API测试
