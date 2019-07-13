@@ -7,8 +7,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7bb552cf-6047-4718-8d50-4ab9e32c88a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/arctile_edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/arctile_edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/arctile_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/arctile_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/loginbase.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/loginbase.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/loginbase.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/loginbase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/user_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/user_registor.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user_registor.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/main/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="97" column="36" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+            <state relative-caret-position="390">
+              <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="26" />
               <folding>
                 <element signature="e#15#44#0" expanded="true" />
               </folding>
@@ -33,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/utils/data_transfer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -45,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/utils/deal_database_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
+            <state relative-caret-position="510">
               <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="e#15#26#0" expanded="true" />
@@ -170,8 +173,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562839067496</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修改BUG">
+      <created>1562855316400</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562855316400</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -442,12 +452,12 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.20949264" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49925596" weight="0.23567921" />
+      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49925596" weight="0.04901961" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3170347" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.14238952" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074404" side_tool="true" weight="0.27332243" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32569557" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49925596" visible="true" weight="0.34369886" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49925596" visible="true" weight="0.10474632" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -879,20 +889,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="97" column="36" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+        <state relative-caret-position="390">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="26" />
           <folding>
             <element signature="e#15#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/utils/deal_database_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -901,6 +901,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/utils/deal_database_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

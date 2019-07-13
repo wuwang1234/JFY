@@ -92,6 +92,7 @@ html,body{
 	text-indent: 25px;
 }
 #button001,#button002{
+	color: black;
 	width: 100px;
 	height: 48px;
     border: none;
