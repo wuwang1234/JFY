@@ -5,26 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/config.py" line="5" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bb552cf-6047-4718-8d50-4ab9e32c88a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/config/base.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/new 1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practice/new 1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test01.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test02.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_knowlage.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_knowlage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_muti.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_muti.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_performance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_single_instance.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_single_instance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_structure01.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_structure01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_thread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_threading.txt" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test_threading.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tests/test_login" beforeDir="false" />
-    </list>
+    <list default="true" id="7bb552cf-6047-4718-8d50-4ab9e32c88a9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +30,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/testcases/test_baidu.py">
+        <entry file="file://$PROJECT_DIR$/practice/test_baidu.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
@@ -70,13 +51,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/testcases/test_registor.py">
+        <entry file="file://$PROJECT_DIR$/app/main/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="1890">
+              <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#15#44#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -165,7 +155,6 @@
         <option value="$PROJECT_DIR$/app/utils/util_for_login.py" />
         <option value="$PROJECT_DIR$/app/zhdb/mongodb_models/gmodel.py" />
         <option value="$PROJECT_DIR$/待优化.txt" />
-        <option value="$PROJECT_DIR$/app/main/views.py" />
         <option value="$PROJECT_DIR$/app/zhdb/Omodel/Arctiles.py" />
         <option value="$PROJECT_DIR$/app/utils/contants.py" />
         <option value="$PROJECT_DIR$/app/utils/deal_database_data.py" />
@@ -182,6 +171,7 @@
         <option value="$PROJECT_DIR$/tests/config/base.conf" />
         <option value="$PROJECT_DIR$/tests/testcases/test_login.py" />
         <option value="$PROJECT_DIR$/tests/testcases/test_registor.py" />
+        <option value="$PROJECT_DIR$/app/main/views.py" />
       </list>
     </option>
   </component>
@@ -208,19 +198,19 @@
             <path>
               <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -494,7 +484,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563027089727</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="调整目录增加测试用例">
+      <created>1563100399989</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1563100399989</updated>
+    </task>
+    <task id="LOCAL-00017" summary="修改BUG">
+      <created>1563106162839</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1563106162839</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -528,7 +532,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49925596" weight="0.04901961" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3170347" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31914893" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.058919802" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074404" side_tool="true" weight="0.27332243" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32569557" />
       <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49925596" weight="0.062193125" />
@@ -600,9 +604,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后台逻辑增加文章编辑和文章浏览功能" />
     <MESSAGE value="支持中文" />
-    <MESSAGE value="修改BUG" />
     <MESSAGE value="增加测试框架的目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加测试框架的目录" />
+    <MESSAGE value="调整目录增加测试用例" />
+    <MESSAGE value="修改BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改BUG" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -625,20 +630,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="306" selection-start-line="306" selection-end-line="306" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_sqlalchemy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="974" selection-start-line="974" selection-end-line="974" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -814,16 +805,6 @@
     <entry file="file://$PROJECT_DIR$/practice/test01.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/main/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_script/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -994,7 +975,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/testcases/test_baidu.py">
+    <entry file="file://$PROJECT_DIR$/practice/test_baidu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
@@ -1011,12 +992,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="834" selection-start-line="834" selection-end-line="834" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/testcases/test_registor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="98">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
