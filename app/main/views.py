@@ -83,7 +83,8 @@ def registor():
         # db.session.commit()
         # login_user(user)
         # user.save()
-        return redirect(url_for('main.index', username=form_dict['username']))
+        session['name'] = form_dict['username']
+        return redirect(url_for('main.index'))
     return render_template('user_registor.html', Flag=False,
                            form=form, name=session.get('name'),
                            current_time=datetime.utcnow())
