@@ -4,6 +4,9 @@ body{
 .main_heading{
 	font-size: 40px;
 }
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+	font-size: 20px;
+}
 .sbu_heading{
 	display: inline-block;
 	height: 50px;

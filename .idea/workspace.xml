@@ -5,11 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/config.py" line="5" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bb552cf-6047-4718-8d50-4ab9e32c88a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell_scripts/services.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell_scripts/services.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shell_scripts/jfy.sh" afterDir="false" />
-    </list>
+    <list default="true" id="7bb552cf-6047-4718-8d50-4ab9e32c88a9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,8 +131,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-70" />
-    <option name="y" value="45" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -157,11 +153,6 @@
             <path>
               <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
-              <item name="shell_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JustForYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JustForYou" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -172,7 +163,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/bianbingdang" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
@@ -464,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563106417404</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="修改BUG">
+      <created>1563108923317</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1563108923317</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -486,7 +484,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.8642659" side_tool="true" weight="0.21205357" />
       <window_info id="Favorites" order="1" sideWeight="0.84199136" side_tool="true" weight="0.3169643" />
